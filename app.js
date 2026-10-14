@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const i=document.querySelector('#image'),p=document.querySelector('#preview');if(i&&p)i.onchange=()=>{p.innerHTML='';const f=i.files[0];if(!f)return;const x=document.createElement('img');x.src=URL.createObjectURL(f);x.className='preview';p.appendChild(x)}});
